@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project - Page A</title>
+  <link rel="stylesheet" href="./assets/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./main.css">
+
+<style>
+.arrow-nav-wrapper {
+  width: 90vw;
+  max-width: 1700px;
+  margin: 0 auto 70px auto;
+  position: relative;
+}
+.arrow-nav {
+  position: relative;
+  text-align: center;
+}
+.arrow-nav svg {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+.arrow-nav .labels {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.arrow-nav .labels a {
+  position: absolute;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+.arrow-nav .labels a.active {
+  color: #007bff;
+  font-size: 1.3rem;
+}
+svg a circle {
+  cursor: pointer;
+}
+.row {
+  margin-top: 30px;
+}
+</style>
+
+</head>
+<body class="fixed-top-nav">
+
+<div class="container mt-5 pt-4">
+  <h1 class="text-center">Page A</h1>
+</div>
+
+<div class="arrow-nav-wrapper">
+  <div class="arrow-nav">
+    <svg viewBox="0 0 1800 80" preserveAspectRatio="none">
+      <line x1="0" y1="40" x2="1800" y2="40"
+            stroke="black" stroke-width="3"
+            marker-start="url(#arrowheadLeft)"
+            marker-end="url(#arrowheadRight)" />
+      <!-- Clickable Dots -->
+      <a xlink:href="index.html"><circle cx="150" cy="40" r="6" fill="#007bff"/></a>
+      <a xlink:href="pageB.html"><circle cx="600" cy="40" r="6" fill="black"/></a>
+      <a xlink:href="pageC.html"><circle cx="1200" cy="40" r="6" fill="black"/></a>
+      <a xlink:href="pageD.html"><circle cx="1650" cy="40" r="6" fill="black"/></a>
+      <defs>
+        <marker id="arrowheadRight" markerWidth="10" markerHeight="7"
+                refX="10" refY="3.5" orient="auto">
+          <polygon points="0 0, 10 3.5, 0 7" fill="black" />
+        </marker>
+        <marker id="arrowheadLeft" markerWidth="10" markerHeight="7"
+                refX="0" refY="3.5" orient="auto">
+          <polygon points="10 0, 0 3.5, 10 7" fill="black" />
+        </marker>
+      </defs>
+    </svg>
+    <div class="labels">
+      <a href="index.html" class="active" style="left:9%;">Page A</a>
+      <a href="pageB.html" class="" style="left:33%;">Page B</a>
+      <a href="pageC.html" class="" style="left:67%;">Page C</a>
+      <a href="pageD.html" class="" style="left:91%;">Page D</a>
+    </div>
+  </div>
+</div>
+<div class='container'>
+  <div class="row"><div class="col-12">
+    <div class="card shadow-sm p-4 mb-4 d-flex flex-row align-items-center justify-content-between">
+      <a href="pageD.html#D1" class="btn btn-outline-secondary btn-sm">← D1</a>
+      <div class="text-center flex-grow-1">
+        <h3 id="A1">A1</h3>
+        <p>Details about A1...</p>
+      </div>
+      <a href="pageB.html#B1" class="btn btn-outline-primary btn-sm">B1 →</a>
+    </div>
+  </div></div>
+
+  <div class="row"><div class="col-12">
+    <div class="card shadow-sm p-4 mb-4 d-flex flex-row align-items-center justify-content-between">
+      <a href="pageD.html#D2" class="btn btn-outline-secondary btn-sm">← D2</a>
+      <div class="text-center flex-grow-1">
+        <h3 id="A2">A2</h3>
+        <p>Details about A2...</p>
+      </div>
+      <a href="pageB.html#B2" class="btn btn-outline-primary btn-sm">B2 →</a>
+    </div>
+  </div></div>
+
+  <div class="row"><div class="col-12">
+    <div class="card shadow-sm p-4 mb-4 d-flex flex-row align-items-center justify-content-between">
+      <a href="pageD.html#D3" class="btn btn-outline-secondary btn-sm">← D3</a>
+      <div class="text-center flex-grow-1">
+        <h3 id="A3">A3</h3>
+        <p>Details about A3...</p>
+      </div>
+      <a href="pageB.html#B3" class="btn btn-outline-primary btn-sm">B3 →</a>
+    </div>
+  </div></div>
+</div>
+</div>
+
+<script src="./assets/jquery/dist/jquery.min.js"></script>
+<script src="./assets/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
